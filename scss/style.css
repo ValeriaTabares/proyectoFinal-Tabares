@@ -97,6 +97,45 @@ body footer .text-center {
     margin-bottom: 2rem;
   }
 }
+@media screen and (min-width: 0px) {
+  .nosotros {
+    display: grid;
+    grid-template-areas: "imagen__nosotros1 imagen__nosotros2" "titulo__nosotros titulo__nosotros" "texto__nosotros texto__nosotros" "info__nosotros info__nosotros";
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .nosotros__imagen1 {
+    grid-area: imagen__nosotros1;
+    width: 100%;
+  }
+  .nosotros__imagen2 {
+    grid-area: imagen__nosotros2;
+    width: 100%;
+  }
+  .nosotros__titulo {
+    grid-area: titulo__nosotros;
+    padding: 2rem 2rem 0 2rem;
+  }
+  .nosotros__texto {
+    grid-area: texto__nosotros;
+    margin: 1rem 3rem 0 3rem;
+  }
+  .nosotros__info {
+    grid-area: info__nosotros;
+    margin: 3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nosotros__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem;
+  }
+  .nosotros__info span {
+    padding: 2rem;
+  }
+}
 h1 {
   text-align: center;
   font-size: 4rem;
@@ -110,7 +149,7 @@ h1 {
 h2 {
   color: #7855bd;
   font-family: "Lato";
-  font-weight: 400;
+  font-weight: 300;
 }
 
 p {

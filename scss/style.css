@@ -136,6 +136,77 @@ body footer .text-center {
     padding: 2rem;
   }
 }
+@media screen and (min-width: 0px) {
+  .servicios {
+    display: grid;
+    grid-template-areas: "bodas" "bautizos" "babyshowers" "cumples" "graduaciones" "empresariales";
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 1fr;
+  }
+  .servicios__titulo {
+    background-color: #f3ecff;
+    padding: 1rem 0 1.5rem 0;
+  }
+  .servicios h2 {
+    font-weight: 400;
+  }
+  .servicios .bodas {
+    grid-area: bodas;
+  }
+  .servicios .bautizos {
+    grid-area: bautizos;
+  }
+  .servicios .babyshowers {
+    grid-area: babyshowers;
+  }
+  .servicios .cumples {
+    grid-area: cumples;
+  }
+  .servicios .graduaciones {
+    grid-area: graduaciones;
+  }
+  .servicios .empresariales {
+    grid-area: empresariales;
+  }
+  .servicios div {
+    display: flex;
+    flex-direction: column;
+    border: 0.2rem #f3ecff solid;
+    margin: 2rem;
+  }
+  .servicios div h2 {
+    text-align: center;
+    padding: 2rem 2rem 0 2rem;
+    width: 100%;
+  }
+  .servicios div img {
+    width: 15%;
+    margin: 1rem;
+    align-self: center;
+  }
+  .servicios div p {
+    padding: 1rem 2rem 0 2rem;
+    font-family: "Lato";
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 900px) {
+  .servicios {
+    display: grid;
+    grid-template-areas: "bodas bautizos" "babyshowers cumples" "graduaciones empresariales";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .servicios {
+    display: grid;
+    grid-template-areas: "bodas bautizos babyshowers" "cumples graduaciones empresariales";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 h1 {
   text-align: center;
   font-size: 4rem;

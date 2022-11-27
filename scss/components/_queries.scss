@@ -107,3 +107,87 @@
         }
     }
 }
+
+// contenido página nuestros servicios
+@media screen and (min-width: 0px){
+    .servicios{
+        &__titulo{
+            background-color: $secondary;
+            padding: 1rem 0 1.5rem 0;
+        }
+        h2{
+            font-weight: 400;
+        }
+        display: grid;
+        grid-template-areas:
+            "bodas"
+            "bautizos"
+            "babyshowers"
+            "cumples"
+            "graduaciones"
+            "empresariales";
+        grid-template-rows: repeat(6, auto);
+        grid-template-columns: 1fr;
+        .bodas{
+            grid-area: bodas;
+        }
+        .bautizos{
+            grid-area: bautizos;
+        }
+        .babyshowers{
+            grid-area: babyshowers;
+        }
+        .cumples{
+            grid-area: cumples;
+        }
+        .graduaciones{
+            grid-area: graduaciones;
+        }
+        .empresariales{
+            grid-area: empresariales;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            border: 0.2rem $secondary solid;
+            margin: 2rem;
+            h2{
+                text-align: center;
+                padding: 2rem 2rem 0 2rem;
+                width: 100%;
+            }
+            img{
+                width: 15%;
+                margin: 1rem;
+                align-self: center;
+            }
+            p{
+                padding: 1rem 2rem 0 2rem;
+                font-family: map-get($estilos, tipografia);
+                font-size: map-get($estilos, tFuente2);
+                text-align: justify;
+            }
+        }
+    }
+}
+@media screen and (min-width: 900px){
+    .servicios{
+        display: grid;
+        grid-template-areas:
+            "bodas bautizos"
+            "babyshowers cumples"
+            "graduaciones empresariales";
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1024px){
+    .servicios{
+        display: grid;
+        grid-template-areas:
+            "bodas bautizos babyshowers"
+            "cumples graduaciones empresariales";
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

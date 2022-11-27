@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header a {
+  padding-left: 2rem;
+}
+header li {
+  padding: 1rem;
+}
+header li .nav-link {
+  color: #7855bd;
+}
+header li .nav-link:hover {
+  color: #b089ff;
+}/*# sourceMappingURL=style.css.map */

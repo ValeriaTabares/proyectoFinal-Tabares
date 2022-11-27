@@ -15,4 +15,30 @@ header li .nav-link {
 }
 header li .nav-link:hover {
   color: #b089ff;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+body footer {
+  margin-top: auto;
+  background-color: #f3ecff;
+  width: 100%;
+}
+body footer i {
+  font-size: 1.5rem;
+  color: #7855bd;
+}
+body footer i:hover {
+  color: #b089ff;
+  transition: 1s;
+}
+body footer .text-center {
+  background-color: #7855bd;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,62 @@
+// contenido página inicio
+@media screen and (min-width: 0px) {
+    .index{
+        display: grid;
+        grid-template-areas:
+            "imagen__index1 imagen__index2"
+            "titulo__index titulo__index"
+            "texto__index texto__index"
+            "botones__index botones__index";
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        &__titulo{
+            grid-area: titulo__index;
+            padding: 2rem 2rem 0 2rem;
+        }
+        &__imagen1{
+            grid-area: imagen__index1;
+            width: 100%;
+        }
+        &__imagen2{
+            grid-area: imagen__index2;
+            width: 100%;
+        }
+        &__texto{
+            grid-area: texto__index;
+            margin: 2rem;
+        }
+        &__botones{
+            grid-area: botones__index;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .index{
+        display: grid;
+        grid-template-areas:
+            "imagen__index1 imagen__index2"
+            "titulo__index texto__index"
+            "titulo__index botones__index";
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        &__texto{
+            grid-area: texto__index;
+            padding: 5rem 3rem 2rem 3rem;
+            margin: 0;
+        }
+        &__botones{
+            grid-area: botones__index;
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+    }
+}

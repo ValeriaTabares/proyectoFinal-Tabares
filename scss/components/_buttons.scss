@@ -1,0 +1,33 @@
+.index{
+    button{
+        background-color: white;
+        border: 0;
+        border-radius: 2rem;
+        padding: 0 1.2rem 0.2rem 1.2rem;
+        width: 13rem;
+        height: 2rem;
+        &:hover{
+            background-color: $secondary;
+            transition: 1s;
+        }
+        a{
+            font-family: map-get($estilos, tipografia);
+            text-decoration: none;
+            color: $tertiary;
+        }
+    }
+}
+.contacto{
+    button{
+        background-color: $primary;
+        color: $secondary;
+        border-radius: 2rem;
+        padding: 0.1rem 1.2rem 0.1rem 1.2rem;
+        font-family: map-get($estilos, tipografia);
+        &:hover{
+            background-color: $tertiary;
+            transition: 1s;
+            color: white;
+        }
+    }
+}

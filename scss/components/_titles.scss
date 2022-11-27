@@ -1,0 +1,8 @@
+h1{
+    @include estilo_titulos;
+}
+h2{
+    color: $primary;
+    font-family: map-get($estilos, tipografia);
+    font-weight: 400;
+}

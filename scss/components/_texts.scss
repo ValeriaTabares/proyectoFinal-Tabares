@@ -1,0 +1,6 @@
+p{
+    font-family: map-get($estilos, tipografia);
+    font-size: map-get($estilos, tFuente);
+    text-align: justify;
+    font-weight: 300;
+}

@@ -1,0 +1,9 @@
+@mixin estilo_titulos {
+    text-align: center;
+    font-size: 4rem;
+    color: $primary;
+    font-family: map-get($estilos, tipografia);
+    font-weight: 300;
+    width: 100%;
+    padding-top: 1rem;
+}

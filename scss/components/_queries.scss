@@ -1,4 +1,4 @@
-// contenido página inicio
+// contenido página Inicio
 @media screen and (min-width: 0px) {
     .index{
         display: grid;
@@ -61,7 +61,7 @@
     }
 }
 
-// contenido página sobre nosotros
+// contenido página Sobre Nosotros
 @media screen and (min-width: 0px) {
     .nosotros{
         display: grid;
@@ -108,7 +108,7 @@
     }
 }
 
-// contenido página nuestros servicios
+// contenido página Nuestros Servicios
 @media screen and (min-width: 0px){
     .servicios{
         &__titulo{
@@ -189,5 +189,44 @@
             "cumples graduaciones empresariales";
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+// contenido página Galería
+@media screen and (min-width: 0px) {
+    .galeria{
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin: 2rem;
+        gap: 2rem;
+        h1{
+            padding-bottom: 2rem;
+        }
+    }
+    
+}
+@media screen and (min-width: 1200px){
+    .galeria{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}
+
+// contenido página Contacto
+@media screen and (min-width: 0px){
+    .contacto{
+        h1{
+            padding: 2rem;
+            background-color: $secondary;
+            width: 100%;
+        }
+        color: $primary;
+        font-family: map-get($estilos, tipografia);
+        fieldset{
+            padding: 2rem;
+        }
     }
 }

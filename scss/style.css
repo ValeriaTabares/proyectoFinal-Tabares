@@ -207,6 +207,40 @@ body footer .text-center {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+@media screen and (min-width: 0px) {
+  .galeria {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 2rem;
+    gap: 2rem;
+  }
+  .galeria h1 {
+    padding-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .galeria {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 0px) {
+  .contacto {
+    color: #7855bd;
+    font-family: "Lato";
+  }
+  .contacto h1 {
+    padding: 2rem;
+    background-color: #f3ecff;
+    width: 100%;
+  }
+  .contacto fieldset {
+    padding: 2rem;
+  }
+}
 h1 {
   text-align: center;
   font-size: 4rem;
